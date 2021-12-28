@@ -1,2 +1,2 @@
-pdflatex resume.tex
+xelatex resume.tex
 mv resume.pdf output
