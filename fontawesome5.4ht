@@ -1,0 +1,12 @@
+\NewConfigure{fontawesome}{2}
+\ExplSyntaxOn
+\cs_new_protected:Nn\temp:nn{%
+\a:fontawesome%
+\o:fontawesome_use_icon:nn:{#1}{#2}
+\b:fontawesome}
+
+\HLet\fontawesome_use_icon:nn\temp:nn
+\ExplSyntaxOff
+\Configure{fontawesome}{\Picture+{}}{\EndPicture}
+\Hinput{fontawesome5}
+\endinput
