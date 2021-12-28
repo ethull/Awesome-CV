@@ -1,4 +1,8 @@
 ### TeX ###
+## local
+_old
+_test
+main.md
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -7,8 +11,17 @@
 *.fls
 *.out
 *.toc
+## Core xetex/tex4ht auxiliary files:
+*.4ct
+*.4tc
+*.lg
+*.tmp
+*.xref
+*.xdv
+*.fdb_latexmk
 
 ## Intermediate documents:
+*.idv
 *.dvi
 *-converted-to.*
 
