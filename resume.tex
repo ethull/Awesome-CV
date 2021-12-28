@@ -1,0 +1,294 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-emerald}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+% personal info
+%  Comment any of the lines below if they are not required
+
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Ethan}{Hullett}
+%\position{Software Architect{\enskip\cdotp\enskip}Security Expert}
+\address{London, UK}
+
+%\mobile{(+44) \ldots}
+\mobile{\ldots \ldots}
+\email{eh443@kent.ac.uk}
+\link{www.ethull.com}
+% \github{www.github.com/ethull}
+\githublink{www.github.com/ethull}
+% \linkedin{ethan-hullett}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+% \quote{``Be the change that you want to see in the world."}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% start doc
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+\begin{document}
+
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makecvheader
+\makecvfooter
+  {\today}
+  {Ethan Hullett~~~·~~~Résumé}
+  {\thepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+    % sage: \cventry{<position>}{<title>}{<location(right)>}{<date(right)>}{<desc>}
+    \cventry
+    {BSc in Computer Science with Year in Industry}
+	{University of Kent}
+	{Canterbury}
+	{2020 – 2023}
+	%{1st year results: distinction \\
+    %My favourite module within the first year is the OOP (object oriented programming), which I got a 90\% final mark on
+    %}
+    %{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+	%1st year results: distinction  & \\
+    %    My favourite module within the first year was OOP (object oriented programming), which I got a 90\% final mark on. & \\
+    %    \end{tabular}}}
+    {{\begin{tabular}{p{0.9\textwidth}}
+        1st year results: distinction, 85.75\% overall   \\
+        \begin{cvitems}
+            \item {One of my favourite modules in year 1 was Object Oriented Programming, which I scored 90\% in overall, this module was focused around java OOP conceps, such as polymorphism and encapsulation.}
+            \item {Currently one of the modules I am studying is web development, with the theme on MVC frameworks such as CodeIgnitor, which is written in PHP.}
+            \item {Later on this year I will study a software development module, which will teach software development concepts such as the agile methodology.}
+        \end{cvitems}
+    \end{tabular}}
+    }
+
+    \cventry
+	{A levels}
+	{Chis and Sid Grammer School}
+	{London}
+	{2017 – 2019}
+	{1B, 2Cs, including: maths, computer science, business}
+	\cventry
+	{GCSEs}
+	{Hurstmere High School}
+	{London}
+	{2012 – 2016}
+	{8 subjects at A grade, including: maths, science, computer science}
+\end{cventries}
+
+\vspace{-2mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{CEO assistant}
+	{TrainAsOne}
+	{Norfolk UK}
+	{June 2018 – August 2018}
+    {{\begin{tabular}{p{0.9\textwidth}}
+        After testing their web app before its release as a beta tester for 2 years, I went to Norfolk for work experience at TrainAsOne. Which is a startup firm that uses AI as a personal trainer for long distance runners. Some skills I developed:   \\
+        \begin{cvitems}
+            \item {Exposure to apache tomcat (java servlet container)}
+            \item {Basic shell script (bash) and automation}
+            %\item {Maintenance of PostgreSQL server}
+            \item {Brainstorm new features}
+            %\item {Clean website Code}
+            \item {Test AI product actively (beta testing)}
+        \end{cvitems}
+    \end{tabular}}
+    }
+
+	\cventry
+	{IT Solutions Assistant}
+	{ABC Computers}
+	{London UK}
+	{June 2016 – August 2016}
+    {{\begin{tabular}{p{0.9\textwidth}}
+        I worked unpaid for this computer repair company, in their main office among 4 staff members and the owner. My main responsibilities and skills gained where:   \\
+	    \begin{cvitems}
+            \item {Commercial Maintenance of client computers (Malware removal, cleaning, defrag)}
+            \item {Setup of client computers outside office under client instruction}
+            \item {Technical problem solving}
+		\end{cvitems}
+    \end{tabular}}
+    }
+\end{cventries}
+
+\cvsection{Computing Skills}
+\begin{cvskills}
+  \cvskill
+    {Programming Languages} % Category
+    {Java, Python, Javascript, PHP, Bash} % Skills
+  \cvskill
+    {Markup Languages} % Category
+    {HTML5, CSS, Markdown, SQL} % Skills
+  \cvskill
+    {Frameworks exposed too} % Category
+    {ReactJS, NextJS} % Skills
+  \cvskill
+    {Data Interchange Formats} % Category
+    {YAML, JSON, CSV, XML} % Skills
+  \cvskill
+    {Linux Tools} % Category
+    {GIT, GPG, VIM} % Skills
+  \cvskill
+    {Operating Systems} % Category
+    {Linux system maintenance and troubleshooting (APT, SYSTEMD, GRUB, \ldots)} % Skills
+  \cvskill
+    {Microsoft} % Category
+    {Word processing apps, Sysinternals Tools} % Skills
+  %\cvskill
+  %  {Other} % Category
+  %  {Drivers license} % Skills
+\end{cvskills}
+
+%\begin{cventries}
+%	\cventry
+%	{}
+%	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+%		Programming Languages:   & {\skill{Python, Javascript, PHP, Java, Bash}} \\
+%		Markup Languages:   & {\skill{HTML5, CSS, Markdown, SQL}} \\
+%		Frameworks exposed too:   & {\skill{ReactJS, NextJS}} \\
+%        Data Interchange Formats: \hspace{2pt}   & {\skill{YAML, JSON, CSV, XML}} \\
+%        Linux Tools:   & {\skill{GIT, GPG, VIM}} \\
+%        Operating Systems:   & {\skill{Linux system maintenance and troubleshooting (APT, SYSTEMD, GRUB, \ldots)}} \\
+%        Microsoft:   & {\skill{Word processing apps, Sysinternals Tools}} \\
+%        Other:   & {\skill{Drivers license}} \\
+%		\end{tabular}}}
+%	{}{}{}
+
+%\end{cventries}
+
+\vspace{-7mm}
+\cvsection{Projects}
+\begin{cventries}
+	\cventry
+	{Personal Website and Blog}
+	{ethull}
+	{HTML, CSS, JS, Jekyll}
+	{https://ethull.com}
+	{Personal website built with the static site generator jekyll, has blog posts written in markdown which are converted to html using kramdown.}
+	\cventry
+	{Summer of Shipping Project}
+	{youtube-nlp}
+	{HTML, CSS, JS, NextJS, Python, Balsamiq}
+	{to be deployed}
+	{During the summer I joined the summer of shipping discord and was accepted into the frontend team for the YoutubeNLP project. I wrote the balsamiq mockups for the site and contributed to the nextjs code. Here i learnt to collaborativelly use git with github. When delegated work I would create a feature branch within my fork, incorporate upstream changes, and pull request before the deadline.}
+	\cventry
+	{configuration for a debian based linux system}
+	{dotfiles}
+	{Bash, Vimscript, Conf}
+	{https://github/ethull/dotfiles}
+    {Dotfiles are the hidden files starting with a dot, they are used to configure programs on linux. This repo has configuration files for programs i use so that i can copy my configuration between computers and deploy it quickly. Example programs configured: xterm (terminal emulator), vim (text editor), tmux (terminal multiplexor).}
+	
+	\vspace{-3mm}
+\end{cventries}
+
+%\cvsection{awards}
+%\begin{cvhonors}
+%    % name,desc,sider,date
+%	\cvhonor
+%	{drivers license}
+%	{}
+%	{}
+%	{2019}
+%\end{cvhonors}
+
+\cvsection{interests}
+\begin{cventries}
+	\cventry
+	{Technology}
+	{}
+	{}
+	{}
+    {Enjoy experimenting with software and linux, projects can be found on my github}
+	\cventry
+	{Fitness/outdoors}
+	{}
+	{}
+	{}
+    {Endurance running, mountain biking, gym, DIY.}
+    
+    
+    %\href{http://\@githublink}{\faGithubSquare\ \@githublink}
+\end{cventries}
+
+\cvsection{references}
+\begin{cventries}
+	\cventry
+	{ref dude at kent}
+	{academic}
+	{}
+	{}
+    {\begin{tabular}{p{0.9\textwidth}}
+    email: abc@kent.ac.uk \\ phone: \ldots \ldots
+    \end{tabular}}
+	\cventry
+	{ref dude at trainasone}
+	{work experience}
+	{}
+	{}
+    {\begin{tabular}{p{0.9\textwidth}}
+        email: abc@trainasone.com \\ phone: \ldots \ldots
+    \end{tabular}}
+\end{cventries}
+
+\ 
+\end{document}
